@@ -1,0 +1,68 @@
+/*1.rem单位 px em rem */
+/*2.media查询*/
+/*3.什么时候设置百分比，什么时候rem*/
+html {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #68cdd5;
+    /*改*/
+}
+
+.btn-back {
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    width: 3.375rem;
+}
+
+.container {
+    padding: 0 5.75rem 0;
+    margin-bottom: 7rem;
+}
+
+.title-logo {
+    display: block;
+    margin: 7.25rem auto;
+    width: 11.25rem;
+}
+
+p {
+    padding: 0;
+    margin: 0 auto 5rem;
+    color: white;
+    font-size: 1.875rem;
+}
+
+.left, .right {
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.left > img, .right > img {
+    display: block;
+    margin: 3rem auto .5rem auto;
+    width: 5.25rem;
+
+}
+
+.fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fix {
+    *zoom: 1;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: .75rem;
+    }
+}
