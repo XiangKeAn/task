@@ -13,9 +13,11 @@ body {
 }
 
 .btn-back {
-    position: fixed;
-    left: 2rem;
-    top: 2rem;
+    /*position: fixed;*/
+    /*left: 2rem;*/
+    /*top: 2rem;*/
+    margin-top: 2rem;
+    margin-left: 2rem;
     width: 3.375rem;
 }
 
