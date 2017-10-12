@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>任务7-投票</title>
+    <link rel="stylesheet" type="text/css" href="css/vote.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="js/t7.js"></script>
+</head>
+<body>
+<div class="header fix">
+    <button id="menu"></button>
+    <label for="menu" class="btn-menu"></label>
+    投票
+    <button id="close"></button>
+    <label for="close" class="btn-close"></label>
+    <audio controls="controls" autoplay="autoplay">
+        <source src="res/LoveYourself.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div class="tip-bar">
+    <span>发言讨论结束，大家请投票</span>
+    <button id="playMusic"></button>
+    <label for="playMusic" class="btn-playMusic">
+        <span></span>
+    </label>
+    <div class="triangle"></div>
+</div>
+<div class="tip-text">
+    点击的票数最多人的头像
+</div>
+<div class="content fix">
+    <div class="c-row">
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup1)" onmouseenter="showChoose(chooseGroup1)"
+                 onmouseleave="hideChoose(chooseGroup1)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup1" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup2)" onmouseenter="showChoose(chooseGroup2)"
+                 onmouseleave="hideChoose(chooseGroup2)">
+                <p>水民</p>
+                <p>2号</p>
+            </div>
+            <div id="chooseGroup2" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup3)" onmouseenter="showChoose(chooseGroup3)"
+                 onmouseleave="hideChoose(chooseGroup3)">
+                <p>水民</p>
+                <p>3号</p>
+            </div>
+            <div id="chooseGroup3" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c-row">
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup4)" onmouseenter="showChoose(chooseGroup4)"
+                 onmouseleave="hideChoose(chooseGroup4)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup4" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup5)" onmouseenter="showChoose(chooseGroup5)"
+                 onmouseleave="hideChoose(chooseGroup5)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup5" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup6)" onmouseenter="showChoose(chooseGroup6)"
+                 onmouseleave="hideChoose(chooseGroup6)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup6" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c-row">
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup7)" onmouseenter="showChoose(chooseGroup7)"
+                 onmouseleave="hideChoose(chooseGroup7)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup7" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup8)" onmouseenter="showChoose(chooseGroup8)"
+                 onmouseleave="hideChoose(chooseGroup8)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup8" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup9)" onmouseenter="showChoose(chooseGroup9)"
+                 onmouseleave="hideChoose(chooseGroup9)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup9" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c-row">
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup10)" onmouseenter="showChoose(chooseGroup10)"
+                 onmouseleave="hideChoose(chooseGroup10)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup10" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup11)" onmouseenter="showChoose(chooseGroup11)"
+                 onmouseleave="hideChoose(chooseGroup11)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup11" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+        <div class="c-column" >
+            <div class="box" onclick="showChoose(chooseGroup13)" onmouseenter="showChoose(chooseGroup12)"
+                 onmouseleave="hideChoose(chooseGroup12)">
+                <p>水民</p>
+                <p>1号</p>
+            </div>
+            <div id="chooseGroup12" class="chooseGroup">
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <button id="voteToDie"></button>
+    <label for="voteToDie" class="btn-vote">投死</label>
+</div>
+</body>
+</html>

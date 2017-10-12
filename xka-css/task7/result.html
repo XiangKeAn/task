@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>任务7-结果页</title>
+    <link rel="stylesheet" type="text/css" href="css/res.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="js/t7.js"></script>
+</head>
+<body>
+<div class="header fix">
+    <button id="home"></button>
+    <label for="home" class="btn-home" onclick="go(home)"></label>
+    游戏结果
+    <button id="help"></button>
+    <label for="help" class="btn-help"></label>
+</div>
+<div class="con-result fix">
+    <div class="res-cup fix">
+        <div class="cup"></div>
+        <span>卧底胜利</span>
+    </div>
+    <div class="tip-text">
+        太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
+    </div>
+    <div class="res-text">
+        <table>
+            <tr>
+                <th colspan="3">本次游戏共计用时0小时25分钟</th>
+            </tr>
+            <tr>
+                <td>杀&nbsp;&nbsp;&nbsp;&nbsp;手0人</td>
+                <td>警&nbsp;&nbsp;&nbsp;&nbsp;察1人</td>
+                <td>平&nbsp;&nbsp;&nbsp;&nbsp;民6人</td>
+            </tr>
+            <tr>
+                <td>狙击手0人</td>
+                <td>医&nbsp;&nbsp;&nbsp;&nbsp;生1人</td>
+            </tr>
+            <tr>
+                <td colspan="3">卧底词汇：爱新觉罗</td>
+            </tr>
+            <tr>
+                <td colspan="3">水民词汇：努尔哈赤</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="con-details">
+    <div class="list">
+        <div class="det-content">
+            <div class="time">
+                <span>第1天</span>
+                <span>0小时07分</span>
+            </div>
+            <div class="describe">
+                <p>晚上：5号被杀手杀死，5号是水民</p>
+                <p>白天：8号被全民投票投死，8号是杀手</p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="det-content">
+            <div class="time">
+                <span>第2天</span>
+                <span>0小时14分</span>
+            </div>
+            <div class="describe">
+                <p>晚上：5号被杀手杀死，5号是水民</p>
+                <p>白天：8号被全民投票投死，8号是杀手</p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="det-content">
+            <div class="time">
+                <span>第3天</span>
+                <span>0小时21分</span>
+            </div>
+            <div class="describe">
+                <p>晚上：5号被杀手杀死，5号是水民</p>
+                <p>白天：8号被全民投票投死，8号是杀手</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <button id="again"></button>
+    <label for="again" class="btn-again" onclick="go(home)">再来一局</label>
+    <button id="share"></button>
+    <label for="share" class="btn-share">上传并分享</label>
+</div>
+</body>
+</html>

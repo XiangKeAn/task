@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>任务7-版本选择</title>
+    <link rel="stylesheet" type="text/css" href="css/t7.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="js/t7.js"></script>
+</head>
+<body>
+<div class="container-f">
+    <div class="nav">
+        <button id="menu"></button>
+        <label for="menu" class="menu" onclick="showMenu(menus)"></label>
+        <ul id="menus">
+            <li>首页</li>
+            <li id="vote" onclick="go(vote)">投票</li>
+            <li id="res" onclick="go(res)">结果</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="history">
+            <p>
+                上次游戏：捉鬼猜词版
+                <button id="back"></button>
+                <label for="back" class="back"></label>
+            </p>
+        </div>
+        <div class="list">
+            <div class="game-name">捉鬼游戏</div>
+            <div class="p1">
+                <div class="simple">简化版</div>
+                <p class="simple-text">有1133个用户正在玩此游戏</p>
+            </div>
+            <div class="p2">
+                <div class="guess">
+                    猜词版
+                    <button id="page"></button>
+                    <label for="page" class="page"></label>
+                </div>
+                <p class="guess-text">有1133个用户正在玩此游戏</p>
+            </div>
+            <div class="p3">
+                <div class="fool">白痴版</div>
+                <p class="fool-text">有1133个用户正在玩此游戏</p>
+            </div>
+            <div class="page-tip">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
